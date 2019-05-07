@@ -1,0 +1,10 @@
+<h1>Add a new item to @Model.GetName()</h1>
+
+<form action='/categories/@Model.GetId()/items' method='post'>
+  <input id='categoryId' name='categoryId' type='hidden' value='@Model.GetId()'>
+  <label for='itemDescription'>Item description</label>
+  <input id='itemDescription' name='itemDescription' type='text'>
+  <label for='dueDate'>Item Due Date</label>
+  <input id='dueDate' name='dueDate' type='date'>
+  <button type='submit'>Add item</button>
+</form>
